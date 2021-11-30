@@ -34,11 +34,7 @@
 
    <script type="text/javascript">
 
-$(function() {
-    $('select').change(function() {
-    update_field();        
-    });
-});
+
        
 $(function update_field(){    
     var course = $('[name="course"] option:selected').val();
@@ -64,6 +60,11 @@ $(function update_field(){
     }    
 });
 
+$(function() {
+    $('select').change(function() {
+    update_field();        
+    });
+});       
 
 </script>
    <!--jQueryによるscript終了-->
