@@ -35,7 +35,12 @@
    <script type="text/javascript">
 
 $(function() {
-    $('select').change(function() {  
+    $('select').change(function() {
+    update_field();        
+    });
+});
+       
+$(function update_field(){    
     var course = $('[name="course"] option:selected').val();
     var gaku_class = $('[name="gaku_class"] option:selected').val();
     var azukari = $('[name="azukari"] option:selected').val();
@@ -58,7 +63,7 @@ $(function() {
         $("#result_zone").show("normal");
     }    
 });
-});
+
 
 </script>
    <!--jQueryによるscript終了-->
